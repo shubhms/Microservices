@@ -38,3 +38,20 @@ API-gateway is just there so that our customer user hits only api-gateway URL or
 user-service or contact-service as per our convenience.
 
 
+------------------------------------------------------------------------------------------------------------------------------------------
+Video Link : https://youtu.be/PhOhauyinZU
+
+After second commit of Hystrix capability added :
+
+With Hystrix we can monitor our requests, how many requests failed, passed.
+With Hystrix, we can configure reponse to our user in case any service is down.
+For Eg : If user service is down, we can get appropriate response back
+Like : "User service is down at this time!! Sorry for the inconvenience."
+
+So I was able to get this response if the user service/ contact service is down.
+But I was not able to open dashboard of Hystrix which shows the monitoring of requests whether failed or passed.
+
+
+
+
+
