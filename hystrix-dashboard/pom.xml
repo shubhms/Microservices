@@ -5,26 +5,28 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.4.RELEASE</version>
+		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.apigateway</groupId>
-	<artifactId>apigateway</artifactId>
+	<groupId>com.dashboard</groupId>
+	<artifactId>hystrix-dashboard</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apigateway</name>
-	<description>This is a micro service for api gatewayr</description>
+	<name>hystrix-dashboard</name>
+	<description>This project is for realtime monitoring using Hystrix dashboard</description>
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+		<spring-cloud.version>2021.0.3</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -34,14 +36,11 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-			<version>2.2.10.RELEASE</version>
+			<version>2.2.5.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
